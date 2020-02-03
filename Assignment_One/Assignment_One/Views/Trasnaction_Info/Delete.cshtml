@@ -1,0 +1,80 @@
+﻿@model Assignment_One.Models.Trasnaction_Info
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Trasnaction_Info</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.game_title)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.game_title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.customer_name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.customer_name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.customer_number)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.customer_number)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.date_purchased)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.date_purchased)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.customer_payment)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.customer_payment)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.game_inventory)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.game_inventory)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.payment_confirmed)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.payment_confirmed)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

@@ -1,0 +1,87 @@
+﻿@model IEnumerable<Assignment_One.Models.Customer_Info>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.game_title)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.game_price)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.customer_name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.date_purchased)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.customer_email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.customer_phone)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.purchase_card_num)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.purchase_ccv)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.shipping_address)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.billing_address)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.game_title)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.game_price)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.customer_name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.date_purchased)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.customer_email)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.customer_phone)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.purchase_card_num)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.purchase_ccv)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.shipping_address)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.billing_address)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.productId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.productId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.productId })
+        </td>
+    </tr>
+}
+
+</table>
