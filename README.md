@@ -12,3 +12,16 @@ How OOP can be implemented:
   for an exmaple, a developer of the website would have more access to certian vairables then others (examples cfredit card info would need to stay private since we dont want the customers to look at other customers credit card info.)
   
  
+ 
+
+
+ 
+
+
+ 
+
+
+ 
+
+
+
