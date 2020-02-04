@@ -1,0 +1,98 @@
+﻿@model Assignment_One.Models.Game_Inventory
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Game_Inventory</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.game_title)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.game_title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.game_genre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.game_genre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.age_restiction_rating)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.age_restiction_rating)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.date_release)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.date_release)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.game_owners)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.game_owners)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.game_ratings)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.game_ratings)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.in_Stock)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.in_Stock)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.game_price)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.game_price)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.modable_game)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.modable_game)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.type_of_game)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.type_of_game)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.productId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
