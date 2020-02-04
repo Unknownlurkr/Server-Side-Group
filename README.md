@@ -11,7 +11,8 @@ How OOP can be implemented:
 - Encapsulation: There are some information that needs to remind private and can only be shared with certian users depending on their role. 
   for an exmaple, a developer of the website would have more access to certian vairables then others (examples cfredit card info would need to stay private since we dont want the customers to look at other customers credit card info.)
   
- 
+ Live site (uploaded to azure cloud and on a live server link)
+ https://assignmentone20200203091928.azurewebsites.net
  
 
 
