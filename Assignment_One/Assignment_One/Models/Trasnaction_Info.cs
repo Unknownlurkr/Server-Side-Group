@@ -28,7 +28,8 @@ namespace Assignment_One.Models
         [StringLength(10)]
         public string customer_number { get; set; }
 
-        [Column("date-purchased", TypeName = "date")]
+        [Column("date-purchased")]
+        [DataType(DataType.Date)]
         public DateTime date_purchased { get; set; }
 
         [Column("customer-payment")]

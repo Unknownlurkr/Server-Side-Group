@@ -27,7 +27,8 @@ namespace Assignment_One.Models
         [StringLength(2)]
         public string age_restiction_rating { get; set; }
 
-        [Column("date-release", TypeName = "date")]
+        [Column("date-release")]
+        [DataType(DataType.Date)]
         public DateTime date_release { get; set; }
 
         [Column("game-owners")]
